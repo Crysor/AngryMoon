@@ -1,0 +1,6 @@
+framework module Pods_Angry_Moon {
+  umbrella header "Pods-Angry Moon-umbrella.h"
+
+  export *
+  module * { export * }
+}

@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>placeholder_enter</key>
+	<dict>
+		<key>value</key>
+		<string>Veuillez saisir une tâche !</string>
+		<key>comment</key>
+		<string></string>
+	</dict>
+	<key>placeholder_task</key>
+	<dict>
+		<key>value</key>
+		<string>D&apos;autres tâches ?</string>
+		<key>comment</key>
+		<string></string>
+	</dict>
+	<key>notif_title</key>
+	<dict>
+		<key>value</key>
+		<string>Avez-vous achevé cette tâche ?</string>
+		<key>comment</key>
+		<string></string>
+	</dict>
+	<key>del_btn</key>
+	<dict>
+		<key>value</key>
+		<string>Supprimer</string>
+		<key>comment</key>
+		<string></string>
+	</dict>
+	<key>ok_btn</key>
+	<dict>
+		<key>value</key>
+		<string>Achevée</string>
+		<key>comment</key>
+		<string></string>
+	</dict>
+	<key>title_edit</key>
+	<dict>
+		<key>value</key>
+		<string>Modifier</string>
+		<key>comment</key>
+		<string></string>
+	</dict>
+	<key>body_edit</key>
+	<dict>
+		<key>value</key>
+		<string>Renommer cette tâche</string>
+		<key>comment</key>
+		<string></string>
+	</dict>
+	<key>btn_cancel</key>
+	<dict>
+		<key>value</key>
+		<string>Annuler</string>
+		<key>comment</key>
+		<string></string>
+	</dict>
+	<key>btn_edit</key>
+	<dict>
+		<key>value</key>
+		<string>Modifier</string>
+		<key>comment</key>
+		<string></string>
+	</dict>
+	<key>placeholder_rename</key>
+	<dict>
+		<key>value</key>
+		<string>Renommer</string>
+		<key>comment</key>
+		<string></string>
+	</dict>
+	<key>askforrateText</key>
+	<dict>
+		<key>value</key>
+		<string>Vous Aimez cette App ? Dîtes nous ce que vous en pensez et notez l’app !</string>
+		<key>comment</key>
+		<string></string>
+	</dict>
+	<key>askforrateNeg</key>
+	<dict>
+		<key>value</key>
+		<string>Non je n’aime pas cette app</string>
+		<key>comment</key>
+		<string></string>
+	</dict>
+	<key>askforratePos</key>
+	<dict>
+		<key>value</key>
+		<string>Noter 5 étoiles</string>
+		<key>comment</key>
+		<string></string>
+	</dict>
+	<key>askforrateRemindMe</key>
+	<dict>
+		<key>value</key>
+		<string>Demandez moi plus tard</string>
+		<key>comment</key>
+		<string></string>
+	</dict>
+	<key>askforrateTitle</key>
+	<dict>
+		<key>value</key>
+		<string>Noter L’app</string>
+		<key>comment</key>
+		<string></string>
+	</dict>
+	<key>btn_getit</key>
+	<dict>
+		<key>value</key>
+		<string>Obtenir</string>
+		<key>comment</key>
+		<string></string>
+	</dict>
+	<key>reminder</key>
+	<dict>
+		<key>value</key>
+		<string>Rappel</string>
+		<key>comment</key>
+		<string></string>
+	</dict>
+	<key>tags</key>
+	<dict>
+		<key>value</key>
+		<string>Pastille</string>
+		<key>comment</key>
+		<string></string>
+	</dict>
+	<key>new_task_placeholder</key>
+	<dict>
+		<key>value</key>
+		<string>Veuillez ajouter une tâche ici.</string>
+		<key>comment</key>
+		<string></string>
+	</dict>
+</dict>
+</plist>

@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>placeholder_enter</key>
+	<dict>
+		<key>value</key>
+		<string>Please Enter a Task !</string>
+		<key>comment</key>
+		<string></string>
+	</dict>
+	<key>placeholder_task</key>
+	<dict>
+		<key>value</key>
+		<string>Any other tasks ?</string>
+		<key>comment</key>
+		<string></string>
+	</dict>
+	<key>notif_title</key>
+	<dict>
+		<key>value</key>
+		<string>Have you achieved this Task ?</string>
+		<key>comment</key>
+		<string></string>
+	</dict>
+	<key>ok_btn</key>
+	<dict>
+		<key>value</key>
+		<string>Complete</string>
+		<key>comment</key>
+		<string></string>
+	</dict>
+	<key>del_btn</key>
+	<dict>
+		<key>value</key>
+		<string>Delete</string>
+		<key>comment</key>
+		<string></string>
+	</dict>
+	<key>placeholder_rename</key>
+	<dict>
+		<key>value</key>
+		<string>Rename</string>
+		<key>comment</key>
+		<string></string>
+	</dict>
+	<key>btn_edit</key>
+	<dict>
+		<key>value</key>
+		<string>Edit</string>
+		<key>comment</key>
+		<string></string>
+	</dict>
+	<key>btn_cancel</key>
+	<dict>
+		<key>value</key>
+		<string>Cancel</string>
+		<key>comment</key>
+		<string></string>
+	</dict>
+	<key>body_edit</key>
+	<dict>
+		<key>value</key>
+		<string>Rename this task</string>
+		<key>comment</key>
+		<string></string>
+	</dict>
+	<key>title_edit</key>
+	<dict>
+		<key>value</key>
+		<string>Edit</string>
+		<key>comment</key>
+		<string></string>
+	</dict>
+	<key>askforrateRemindMe</key>
+	<dict>
+		<key>value</key>
+		<string>Remind me later</string>
+		<key>comment</key>
+		<string></string>
+	</dict>
+	<key>askforratePos</key>
+	<dict>
+		<key>value</key>
+		<string>Rate 5 stars</string>
+		<key>comment</key>
+		<string></string>
+	</dict>
+	<key>askforrateNeg</key>
+	<dict>
+		<key>value</key>
+		<string>No I don&apos;t like this app</string>
+		<key>comment</key>
+		<string></string>
+	</dict>
+	<key>askforrateText</key>
+	<dict>
+		<key>value</key>
+		<string>You seem to enjoy this App, let us know what you think and give us a rate !</string>
+		<key>comment</key>
+		<string></string>
+	</dict>
+	<key>askforrateTitle</key>
+	<dict>
+		<key>value</key>
+		<string>Rate this app</string>
+		<key>comment</key>
+		<string></string>
+	</dict>
+	<key>btn_getit</key>
+	<dict>
+		<key>value</key>
+		<string>Get it</string>
+		<key>comment</key>
+		<string></string>
+	</dict>
+	<key>reminder</key>
+	<dict>
+		<key>value</key>
+		<string>Reminder</string>
+		<key>comment</key>
+		<string></string>
+	</dict>
+	<key>tags</key>
+	<dict>
+		<key>value</key>
+		<string>Tags</string>
+		<key>comment</key>
+		<string></string>
+	</dict>
+	<key>new_task_placeholder</key>
+	<dict>
+		<key>value</key>
+		<string>Please Add a Task here .</string>
+		<key>comment</key>
+		<string></string>
+	</dict>
+</dict>
+</plist>
