@@ -2,8 +2,8 @@
 //  ViewController.swift
 //  toDoList
 //
-//  Created by Ahmad Khawatmi on 13/05/16.
-//  Copyright © 2016 Ahmad Khawatmi. All rights reserved.
+//  Created by Jérémy Kerbidi on 13/05/16.
+//  Copyright © 2016 Jérémy Kerbidi. All rights reserved
 //
 
 import UIKit
@@ -28,8 +28,8 @@ class ViewController: UIViewController ,UITableViewDelegate,UITableViewDataSourc
     
     @IBOutlet weak var bannerView: GADNativeExpressAdView!
     var admobInterstitial : GADInterstitial?
-     var timerAds : Timer?
-    
+    var timerAds : Timer?
+    var gtracker: TrackerGoogle!
     @IBOutlet var stateAchieved: UIImageView!
     @IBOutlet var stateNotAchieved: UIImageView!
     @IBOutlet var opacityMoon: UIImageView!
@@ -39,6 +39,7 @@ class ViewController: UIViewController ,UITableViewDelegate,UITableViewDataSourc
     @IBOutlet var taskField: UITextField!
     
     @IBOutlet var tableView: UITableView!
+    @IBOutlet weak var imgBack: UIImageView!
     
     @IBOutlet var hidingappearingstatsButton: UIButton!
     @IBAction func hidingappearingStats(_ sender: AnyObject) {
@@ -163,7 +164,10 @@ class ViewController: UIViewController ,UITableViewDelegate,UITableViewDataSourc
     @IBOutlet var fireBtn: UIButton!  // fire the notificatin to ring in background
     @IBAction func fireNotification(_ sender: AnyObject) {
         
-    addToList()
+        
+        self.gtracker.setEvent(category: "reminder", action: "add_task", label: "click")
+        
+        addToList()
         
         addSettingImage.isHidden = true
         addSettingButton.setBackgroundImage(UIImage(named: "showSetting.png"), for: UIControlState())
@@ -242,21 +246,20 @@ class ViewController: UIViewController ,UITableViewDelegate,UITableViewDataSourc
     var deletedTask = true
     
     
-    var gtracker: TrackerGoogle!
-    
     
     //VIEW DID LOAD IS HERE =====================================================================
     @IBAction func MoreApps(_ sender: Any) {
-        self.gtracker.setEvent(category: "home", action: "moreapps", label: "click")
+        self.gtracker.setEvent(category: "reminder", action: "moreapps", label: "click")
     }
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        let annoy = echoPush(view: self)
+        annoy.launchPopUpMode()
         // Do any additional setup after loading the view, typically from a nib.
-        
-        
-        self.gtracker = TrackerGoogle()
-        self.gtracker.setScreenName(name: "Home")
+        self.imgBack.layer.zPosition = 0
+        self.bannerView.layer.zPosition = 1
         self.taskField.placeholder = "new_task_placeholder".localized
         
        //print(UIScreen.mainScreen().nativeBounds.height)
@@ -364,8 +367,8 @@ class ViewController: UIViewController ,UITableViewDelegate,UITableViewDataSourc
         bannerView.load(GADRequest())
         
         // ADMOB INTERSTITIAL! THIS CODE ACTIVATE THE ADDS AFTER 10 SECONDS ! JUST CHANGE THE "10" DOWN TO DECREASE THE SECONDS!   TO PUT YOUR OWN ID  GO DOWN TO THE END OF THE CODE
-         admobInterstitial = createAndLoadInterstitial()
-          timerAds = Timer.scheduledTimer(timeInterval: 10, target:self, selector: #selector(ViewController.presentInterstitial), userInfo: nil, repeats: false)
+         //admobInterstitial = createAndLoadInterstitial()
+         // timerAds = Timer.scheduledTimer(timeInterval: 10, target:self, selector: #selector(ViewController.presentInterstitial), userInfo: nil, repeats: false)
         
         
       /*  // IF YOU WANT TO MAKE THE INTERSTITIAL APPEAR AGAIN SOMEWHERE ELSE , JUST COPY THIS
@@ -473,6 +476,8 @@ class ViewController: UIViewController ,UITableViewDelegate,UITableViewDataSourc
         
         let delete = UITableViewRowAction(style: .normal, title: "del_btn".localized) { action, index in
             //print("Delete button tapped")
+            self.gtracker.setEvent(category: "reminder", action: "delete_task", label: "click")
+
             let audioPath = Bundle.main.path(forResource: "delete1", ofType: "mp3")!
             do
             {
@@ -553,6 +558,8 @@ class ViewController: UIViewController ,UITableViewDelegate,UITableViewDataSourc
         
         let completed = UITableViewRowAction(style: .normal, title: "ok_btn".localized) { action, index in
             //print("favorite button tapped")
+            self.gtracker.setEvent(category: "reminder", action: "complete_task", label: "click")
+
             let audioPath = Bundle.main.path(forResource: "complete1", ofType: "mp3")!
             do
             {
@@ -633,13 +640,15 @@ class ViewController: UIViewController ,UITableViewDelegate,UITableViewDataSourc
     }
     
     override func viewWillAppear(_ animated: Bool) {
+        
+        self.gtracker = TrackerGoogle()
+        self.gtracker.setScreenName(name: "Reminder")
         self.datePicker.minimumDate = Date()
     }
     
     override func viewDidAppear(_ animated: Bool) {
         self.tableView.reloadData()
         updatingLabels()
-        print("adadoazdoazoaaoo")
     }
     
     func textFieldShouldReturn(_ textField : UITextField) -> Bool
@@ -825,7 +834,7 @@ class ViewController: UIViewController ,UITableViewDelegate,UITableViewDataSourc
     
         if taskField.text == ""
         {
-            taskField.placeholder = "Please Enter a Task !"
+            taskField.placeholder = "placeholder_enter".localized
             redButton.isHidden = true
             greenButton.isHidden = true
             orangeButton.isHidden = true

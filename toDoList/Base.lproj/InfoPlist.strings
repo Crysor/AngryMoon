@@ -1,0 +1,9 @@
+/* 
+  InfoPlist.strings
+  Angry Moon
+
+  Created by Jérémy Kerbidi on 23/02/2017.
+  Copyright © 2017 Jérémy Kerbidi. All rights reserved.
+*/
+
+"CFBundleDisplayName" = "Reminder";

@@ -9,6 +9,7 @@
 import UIKit
 import CoreData
 import GoogleMobileAds
+import FirebaseAnalytics
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate, KochavaTrackerClientDelegate {
@@ -24,31 +25,22 @@ class AppDelegate: UIResponder, UIApplicationDelegate, KochavaTrackerClientDeleg
         let settings = UIUserNotificationSettings(types: [.alert, .badge, .sound], categories: nil)
         UIApplication.shared.registerUserNotificationSettings(settings)
         
+        var initDictionary: [AnyHashable: Any] = [:]
         
-        //TODO: kochavaAppId
-        
-        /*var initDictionary: [AnyHashable: Any] = [:]
-        
-        initDictionary["kochavaAppId"] = "kobattery-saver-new-k643w"
+        initDictionary["kochavaAppId"] = "koreminder-angry-moon-sm8s"
         initDictionary["enableLogging"] = "1"
         initDictionary["retrieveAttribution"] = "1"
         self.kochavaTracker = KochavaTracker(kochavaWithParams: initDictionary)
-        */
-        
-        //TODO : google.plist
-        
-        /*
-        var configureError: NSError?
+       
+        var configureError:NSError?
         GGLContext.sharedInstance().configureWithError(&configureError)
         assert(configureError == nil, "Error configuring Google services: \(configureError)")
         
         // Optional: configure GAI options.
-        guard let gai = GAI.sharedInstance() else {
-        assert(false, "Google Analytics not configured correctly")
-        }
-        gai.trackUncaughtExceptions = true  // report uncaught exceptions
-        gai.logger.logLevel = GAILogLevel.verbose  // remove before app release
-        */
+        let gai = GAI.sharedInstance()
+        gai?.trackUncaughtExceptions = true
+        gai?.logger.logLevel = GAILogLevel.verbose
+        
         return true
     }
 
@@ -94,7 +86,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate, KochavaTrackerClientDeleg
                     gtracker.setEvent(category: "home", action: "rate_five", label: "click")
 
                     
-                    let url = "https://itunes.apple.com/app/1182972110"
+                    let url = "https://itunes.apple.com/app/id1208174072"
                      if #available(iOS 10.0, *) {
                         UIApplication.shared.open(NSURL(string : url) as! URL, options: [:], completionHandler: nil)
                      } else {

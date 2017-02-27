@@ -7,10 +7,11 @@
 //
 
 import UIKit
+import FirebaseAnalytics
 
 class TrackerGoogle {
     
-    var debug: Bool = true // set true for debug mode
+    var debug: Bool = false // set true for debug mode
     var tracker: GAITracker!
     
     init() {

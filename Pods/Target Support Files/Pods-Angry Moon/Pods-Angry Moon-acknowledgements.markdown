@@ -26,33 +26,33 @@ THE SOFTWARE.
 
 ## Firebase
 
-Copyright 2016 Google
+Copyright 2017 Google
 
 ## FirebaseAnalytics
 
-Copyright 2016 Google
+Copyright 2017 Google
 
 ## FirebaseCore
 
-Copyright 2016 Google
+Copyright 2017 Google
 
 ## FirebaseInstanceID
 
-Copyright 2016 Google
+Copyright 2017 Google
 
 ## Google-Mobile-Ads-SDK
 
-Copyright 2016 Google
+Copyright 2017 Google
 
 ## Google
 
-Copyright 2016 Google Inc.
+Copyright 2015 Google Inc.
 
 ## GoogleAnalytics
 
 Copyright 2016 Google
 
-## GoogleInterchangeUtilities
+## GoogleNetworkingUtilities
 
 Copyright 2016 Google
 
@@ -265,6 +265,10 @@ Copyright 2016 Google
    See the License for the specific language governing permissions and
    limitations under the License.
 
+
+## GoogleUtilities
+
+Copyright 2016 Google
 
 ## JASON
 

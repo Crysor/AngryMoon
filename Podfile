@@ -2,15 +2,16 @@
 # platform :ios, '9.0'
 
 target 'Angry Moon' do
-  # Comment the next line if you're not using Swift and don't want to use dynamic frameworks
+  source 'https://github.com/CocoaPods/Specs.git'
+  platform :ios, '8.1'
   use_frameworks!
+  pod 'Google/Analytics', '~> 1.0.0'
   pod 'Alamofire', '~> 4.0'
   pod 'JASON', '~> 3.0'
   pod 'SwiftOverlays', '~> 3.0.0'
   pod 'Firebase/Core'
   pod 'Firebase/AdMob'
   pod 'Kochava'
-  pod 'Google/Analytics'
   # Pods for Angry Moon
 
 end

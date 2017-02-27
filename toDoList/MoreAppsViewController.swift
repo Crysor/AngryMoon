@@ -3,24 +3,24 @@
 //  Angry Moon
 //
 //  Created by Jérémy Kerbidi on 24/01/2017.
-//  Copyright © 2017 Ahmad Khawatmi. All rights reserved.
+//  Copyright © 2017 Jérémy Kerbidi. All rights reserved.
 //
 
 import UIKit
 import Alamofire
 import JASON
+import SwiftOverlays
 
 class MoreAppsViewController: UITableViewController {
     
+    var gtracker: TrackerGoogle!
     var Apps = [MoreAppsItem]()
     var url_request: String {
         let index = "\(Locale.current)".index("\(Locale.current)".startIndex, offsetBy: 3)
         let local = String("\(Locale.current)".characters.suffix(from: index)).lowercased()
         let localPars = String(local.characters.prefix(2))
-        //TODO test avec us
-        return "http://api.supreme.media:8080/request/IOS/MegaApp/us/more_app"
 
-        //return "http://api.supreme.media:8080/request/IOS/MegaApp/\(localPars)/more_app"
+        return "http://api.supreme.media:8080/request/IOS/Reminder/"+localPars+"/more_app"
     }
     
     override func viewDidLoad() {
@@ -35,6 +35,9 @@ class MoreAppsViewController: UITableViewController {
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
+        self.showWaitOverlay()
+        self.gtracker = TrackerGoogle()
+        self.gtracker.setScreenName(name: "More Apps")
     }
     
     private func loadData() {
@@ -43,14 +46,15 @@ class MoreAppsViewController: UITableViewController {
             
             if (response.result.isSuccess) {
                 print("success !")
-                //self.removeAllOverlays()
+                self.removeAllOverlays()
             }
             else {
                 print("fail: \(response.error)")
-                //self.removeAllOverlays()
+                self.removeAllOverlays()
             }
             
             if let json = response.result.value {
+                self.removeAllOverlays()
                 let items = JSON(json)
                 
                 for item in items {

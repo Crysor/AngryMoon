@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		378BEFA47E07A4E3318FA220 /* Pods_Angry_Moon.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9543A2B876C0F7AAD2D10838 /* Pods_Angry_Moon.framework */; };
+		8D0F4D5D1E5F02A0008E2E65 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 8D0F4D5F1E5F02A0008E2E65 /* InfoPlist.strings */; };
+		8D3889741E5C7AF9007CD569 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 8D3889731E5C7AF9007CD569 /* GoogleService-Info.plist */; };
 		8D4E60D01E377C0800CACCE1 /* MoreAppsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D4E60CF1E377C0800CACCE1 /* MoreAppsViewController.swift */; };
 		8D4E60D31E3780AD00CACCE1 /* MoreAppsCellView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D4E60D21E3780AD00CACCE1 /* MoreAppsCellView.swift */; };
 		8D4E60D51E3780D000CACCE1 /* MoreAppsItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D4E60D41E3780D000CACCE1 /* MoreAppsItem.swift */; };
@@ -18,6 +20,7 @@
 		8D4E60E11E379D5800CACCE1 /* languages.plist in Resources */ = {isa = PBXBuildFile; fileRef = 8D4E60E31E379D5800CACCE1 /* languages.plist */; };
 		8D4E60E61E37A59C00CACCE1 /* GoogleToolboxForMac.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8D4E60E51E37A59C00CACCE1 /* GoogleToolboxForMac.framework */; };
 		8D7269441E38F29700DE995A /* TrackerGoogle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D7269431E38F29700DE995A /* TrackerGoogle.swift */; };
+		8D9DCA881E5C9F2A00F5BF4F /* echoPush.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D9DCA871E5C9F2A00F5BF4F /* echoPush.swift */; };
 		C64174291CEBA0870086A31C /* todolist-settings.png in Resources */ = {isa = PBXBuildFile; fileRef = C64174281CEBA0870086A31C /* todolist-settings.png */; };
 		C641742B1CEBA2860086A31C /* showSetting.png in Resources */ = {isa = PBXBuildFile; fileRef = C641742A1CEBA2860086A31C /* showSetting.png */; };
 		C641742F1CEBAE970086A31C /* X-button1.png in Resources */ = {isa = PBXBuildFile; fileRef = C641742E1CEBAE970086A31C /* X-button1.png */; };
@@ -74,6 +77,14 @@
 /* Begin PBXFileReference section */
 		8D0486A91E3F699C00265D8F /* fr-CA */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = "fr-CA"; path = "fr-CA.lproj/languages.plist"; sourceTree = "<group>"; };
 		8D0486AA1E3F69C000265D8F /* en-US */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = "en-US"; path = "en-US.lproj/languages.plist"; sourceTree = "<group>"; };
+		8D0F4D5E1E5F02A0008E2E65 /* Base */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = Base; path = Base.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		8D0F4D601E5F02A3008E2E65 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		8D0F4D611E5F02A4008E2E65 /* fr-CA */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "fr-CA"; path = "fr-CA.lproj/InfoPlist.strings"; sourceTree = "<group>"; };
+		8D0F4D621E5F02A4008E2E65 /* fr */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = fr; path = fr.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		8D0F4D631E5F02A5008E2E65 /* en-US */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "en-US"; path = "en-US.lproj/InfoPlist.strings"; sourceTree = "<group>"; };
+		8D0F4D641E5F02A7008E2E65 /* en-GB */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "en-GB"; path = "en-GB.lproj/InfoPlist.strings"; sourceTree = "<group>"; };
+		8D3889701E5C7839007CD569 /* en-GB */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = "en-GB"; path = "en-GB.lproj/languages.plist"; sourceTree = "<group>"; };
+		8D3889731E5C7AF9007CD569 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		8D4E60CC1E37685100CACCE1 /* Angry Moon.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "Angry Moon.entitlements"; sourceTree = "<group>"; };
 		8D4E60CF1E377C0800CACCE1 /* MoreAppsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MoreAppsViewController.swift; sourceTree = "<group>"; };
 		8D4E60D21E3780AD00CACCE1 /* MoreAppsCellView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MoreAppsCellView.swift; sourceTree = "<group>"; };
@@ -87,6 +98,7 @@
 		8D4E60E51E37A59C00CACCE1 /* GoogleToolboxForMac.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GoogleToolboxForMac.framework; path = "Pods/../build/Debug-iphoneos/GoogleToolboxForMac/GoogleToolboxForMac.framework"; sourceTree = "<group>"; };
 		8D7269411E38EF5200DE995A /* AngryMoon-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "AngryMoon-Bridging-Header.h"; path = "../AngryMoon-Bridging-Header.h"; sourceTree = "<group>"; };
 		8D7269431E38F29700DE995A /* TrackerGoogle.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TrackerGoogle.swift; sourceTree = "<group>"; };
+		8D9DCA871E5C9F2A00F5BF4F /* echoPush.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = echoPush.swift; sourceTree = "<group>"; };
 		9543A2B876C0F7AAD2D10838 /* Pods_Angry_Moon.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Angry_Moon.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		9C38EA21DDA3ADD8EA44645B /* Pods-Angry Moon.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Angry Moon.release.xcconfig"; path = "Pods/Target Support Files/Pods-Angry Moon/Pods-Angry Moon.release.xcconfig"; sourceTree = "<group>"; };
 		C64174281CEBA0870086A31C /* todolist-settings.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "todolist-settings.png"; sourceTree = "<group>"; };
@@ -227,6 +239,7 @@
 		C6C3E2471CE5EC23007602C3 = {
 			isa = PBXGroup;
 			children = (
+				8D3889731E5C7AF9007CD569 /* GoogleService-Info.plist */,
 				8D4E60CC1E37685100CACCE1 /* Angry Moon.entitlements */,
 				C6C3E2521CE5EC23007602C3 /* toDoList */,
 				C6C3E2511CE5EC23007602C3 /* Products */,
@@ -254,12 +267,14 @@
 				C658C2211CF0D1FB0094151B /* Sounds */,
 				C6C3E2531CE5EC23007602C3 /* AppDelegate.swift */,
 				C6C3E2551CE5EC23007602C3 /* ViewController.swift */,
+				8D9DCA871E5C9F2A00F5BF4F /* echoPush.swift */,
 				8D7269411E38EF5200DE995A /* AngryMoon-Bridging-Header.h */,
 				C6C3E2571CE5EC23007602C3 /* Main.storyboard */,
 				C6C3E2701CE5F036007602C3 /* CostumCell.swift */,
 				C6C3E25A1CE5EC23007602C3 /* Assets.xcassets */,
 				C6C3E25C1CE5EC23007602C3 /* LaunchScreen.storyboard */,
 				C6C3E25F1CE5EC23007602C3 /* Info.plist */,
+				8D0F4D5F1E5F02A0008E2E65 /* InfoPlist.strings */,
 			);
 			path = toDoList;
 			sourceTree = "<group>";
@@ -358,12 +373,13 @@
 			attributes = {
 				LastSwiftUpdateCheck = 0730;
 				LastUpgradeCheck = 0820;
-				ORGANIZATIONNAME = "Ahmad Khawatmi";
+				ORGANIZATIONNAME = "Jérémy Kerbidi";
 				TargetAttributes = {
 					C6C3E24F1CE5EC23007602C3 = {
 						CreatedOnToolsVersion = 7.3.1;
 						DevelopmentTeam = 3RY54ULD3V;
 						LastSwiftMigration = 0820;
+						ProvisioningStyle = Manual;
 						SystemCapabilities = {
 							com.apple.Push = {
 								enabled = 1;
@@ -382,6 +398,7 @@
 				fr,
 				"fr-CA",
 				"en-US",
+				"en-GB",
 			);
 			mainGroup = C6C3E2471CE5EC23007602C3;
 			productRefGroup = C6C3E2511CE5EC23007602C3 /* Products */;
@@ -409,10 +426,12 @@
 				C658C21F1CF0C0630094151B /* nervous1.png in Resources */,
 				C658C2151CEF49A00094151B /* Green.png in Resources */,
 				C658C2291CF0D8C20094151B /* add1.mp3 in Resources */,
+				8D3889741E5C7AF9007CD569 /* GoogleService-Info.plist in Resources */,
 				C658C22C1CF0D96D0094151B /* complete1.mp3 in Resources */,
 				C658C2361CF1044E0094151B /* leftDownFlower.png in Resources */,
 				C6C3E26A1CE5ED23007602C3 /* Moon.png in Resources */,
 				C6C3E25E1CE5EC23007602C3 /* LaunchScreen.storyboard in Resources */,
+				8D0F4D5D1E5F02A0008E2E65 /* InfoPlist.strings in Resources */,
 				C658C2181CEFA6990094151B /* tick.png in Resources */,
 				C6C3E26D1CE5ED23007602C3 /* State2.png in Resources */,
 				C6C3E25B1CE5EC23007602C3 /* Assets.xcassets in Resources */,
@@ -496,6 +515,7 @@
 				C6C3E2711CE5F036007602C3 /* CostumCell.swift in Sources */,
 				8D4E60D01E377C0800CACCE1 /* MoreAppsViewController.swift in Sources */,
 				C6C3E2561CE5EC23007602C3 /* ViewController.swift in Sources */,
+				8D9DCA881E5C9F2A00F5BF4F /* echoPush.swift in Sources */,
 				8D4E60D51E3780D000CACCE1 /* MoreAppsItem.swift in Sources */,
 				C6C3E2541CE5EC23007602C3 /* AppDelegate.swift in Sources */,
 				8D4E60DE1E379C4200CACCE1 /* Localizator.swift in Sources */,
@@ -507,6 +527,19 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
+		8D0F4D5F1E5F02A0008E2E65 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				8D0F4D5E1E5F02A0008E2E65 /* Base */,
+				8D0F4D601E5F02A3008E2E65 /* en */,
+				8D0F4D611E5F02A4008E2E65 /* fr-CA */,
+				8D0F4D621E5F02A4008E2E65 /* fr */,
+				8D0F4D631E5F02A5008E2E65 /* en-US */,
+				8D0F4D641E5F02A7008E2E65 /* en-GB */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
 		8D4E60E31E379D5800CACCE1 /* languages.plist */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -514,6 +547,7 @@
 				8D4E60E41E379D6400CACCE1 /* fr */,
 				8D0486A91E3F699C00265D8F /* fr-CA */,
 				8D0486AA1E3F69C000265D8F /* en-US */,
+				8D3889701E5C7839007CD569 /* en-GB */,
 			);
 			name = languages.plist;
 			sourceTree = "<group>";
@@ -636,8 +670,9 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = "Angry Moon.entitlements";
 				CODE_SIGN_IDENTITY = "iPhone Developer";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution";
 				DEVELOPMENT_TEAM = 3RY54ULD3V;
+				ENABLE_BITCODE = NO;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/toDoList",
@@ -648,8 +683,9 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.spicyapps.notes;
 				PRODUCT_NAME = "Angry Moon";
-				PROVISIONING_PROFILE = "";
-				SWIFT_OBJC_BRIDGING_HEADER = "/Work/IOS project/Supreme Media/AngryMoon11/AngryMoon-Bridging-Header.h";
+				PROVISIONING_PROFILE = "a54de1a7-4162-4187-a30d-7bc8af5d0b6c";
+				PROVISIONING_PROFILE_SPECIFIER = "Reminder - Angry Moon";
+				SWIFT_OBJC_BRIDGING_HEADER = "/Work/IOS project/Supreme Media/Git/AngryMoon/AngryMoon-Bridging-Header.h";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
@@ -661,8 +697,9 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = "Angry Moon.entitlements";
 				CODE_SIGN_IDENTITY = "iPhone Developer";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution";
 				DEVELOPMENT_TEAM = 3RY54ULD3V;
+				ENABLE_BITCODE = NO;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/toDoList",
@@ -673,8 +710,9 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.spicyapps.notes;
 				PRODUCT_NAME = "Angry Moon";
-				PROVISIONING_PROFILE = "";
-				SWIFT_OBJC_BRIDGING_HEADER = "/Work/IOS project/Supreme Media/AngryMoon11/AngryMoon-Bridging-Header.h";
+				PROVISIONING_PROFILE = "a54de1a7-4162-4187-a30d-7bc8af5d0b6c";
+				PROVISIONING_PROFILE_SPECIFIER = "Reminder - Angry Moon";
+				SWIFT_OBJC_BRIDGING_HEADER = "/Work/IOS project/Supreme Media/Git/AngryMoon/AngryMoon-Bridging-Header.h";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Release;

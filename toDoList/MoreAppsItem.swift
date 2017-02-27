@@ -3,7 +3,7 @@
 //  Angry Moon
 //
 //  Created by Jérémy Kerbidi on 24/01/2017.
-//  Copyright © 2017 Ahmad Khawatmi. All rights reserved.
+//  Copyright © 2017 Jérémy Kerbidi. All rights reserved.
 //
 
 import UIKit

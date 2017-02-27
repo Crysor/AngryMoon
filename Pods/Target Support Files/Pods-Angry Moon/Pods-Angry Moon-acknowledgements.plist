@@ -43,7 +43,7 @@ THE SOFTWARE.
 		</dict>
 		<dict>
 			<key>FooterText</key>
-			<string>Copyright 2016 Google</string>
+			<string>Copyright 2017 Google</string>
 			<key>License</key>
 			<string>Copyright</string>
 			<key>Title</key>
@@ -53,7 +53,7 @@ THE SOFTWARE.
 		</dict>
 		<dict>
 			<key>FooterText</key>
-			<string>Copyright 2016 Google</string>
+			<string>Copyright 2017 Google</string>
 			<key>License</key>
 			<string>Copyright</string>
 			<key>Title</key>
@@ -63,7 +63,7 @@ THE SOFTWARE.
 		</dict>
 		<dict>
 			<key>FooterText</key>
-			<string>Copyright 2016 Google</string>
+			<string>Copyright 2017 Google</string>
 			<key>License</key>
 			<string>Copyright</string>
 			<key>Title</key>
@@ -73,7 +73,7 @@ THE SOFTWARE.
 		</dict>
 		<dict>
 			<key>FooterText</key>
-			<string>Copyright 2016 Google</string>
+			<string>Copyright 2017 Google</string>
 			<key>License</key>
 			<string>Copyright</string>
 			<key>Title</key>
@@ -83,7 +83,7 @@ THE SOFTWARE.
 		</dict>
 		<dict>
 			<key>FooterText</key>
-			<string>Copyright 2016 Google</string>
+			<string>Copyright 2017 Google</string>
 			<key>License</key>
 			<string>Copyright</string>
 			<key>Title</key>
@@ -93,7 +93,7 @@ THE SOFTWARE.
 		</dict>
 		<dict>
 			<key>FooterText</key>
-			<string>Copyright 2016 Google Inc.</string>
+			<string>Copyright 2015 Google Inc.</string>
 			<key>License</key>
 			<string>Copyright</string>
 			<key>Title</key>
@@ -117,7 +117,7 @@ THE SOFTWARE.
 			<key>License</key>
 			<string>Copyright</string>
 			<key>Title</key>
-			<string>GoogleInterchangeUtilities</string>
+			<string>GoogleNetworkingUtilities</string>
 			<key>Type</key>
 			<string>PSGroupSpecifier</string>
 		</dict>
@@ -340,6 +340,16 @@ THE SOFTWARE.
 			<string>Apache</string>
 			<key>Title</key>
 			<string>GoogleToolboxForMac</string>
+			<key>Type</key>
+			<string>PSGroupSpecifier</string>
+		</dict>
+		<dict>
+			<key>FooterText</key>
+			<string>Copyright 2016 Google</string>
+			<key>License</key>
+			<string>Copyright</string>
+			<key>Title</key>
+			<string>GoogleUtilities</string>
 			<key>Type</key>
 			<string>PSGroupSpecifier</string>
 		</dict>
